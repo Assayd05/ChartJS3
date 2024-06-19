@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import StockComparison from "./Charts/StockComparison"
+import Exchange from "./Charts/Exchange"
+import StockIndicators from "./Charts/StockIndicators"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Peso vs Dollar</h1>
+      <Exchange />
+      <h1>Bolsa de Valores</h1>
+      <StockIndicators />
+      <h1>Bolsa de valores Mexicana y Estadounidense</h1>
+      <StockComparison />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
